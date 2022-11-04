@@ -1,0 +1,146 @@
+body{
+  background-color: transparent;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .slide{
+    z-index: -1;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .layout{
+    position: relative;
+  }
+
+  .user-form-layout{
+    position: relative;
+    margin: 2% 0 0 30%;
+    background-color: aliceblue;
+    display: inline-block;
+    padding: 2vw;
+  }
+
+  .user-form-layout > h1{
+    color:black;
+    font-weight: bold;
+    margin-left: 13vw;
+  }
+
+  .btn-submit{
+    margin: 2vh 0 0 17vw;
+  }
+
+  /* ================= */
+
+  .lastestMovies{
+    height: 30vh;
+  }
+
+  .header1{
+    color: white;
+    margin: 1vh 0 0 6vw;
+    padding-top: 2vh;
+    font-size: 1.2em;
+  }
+
+  .content-1{
+    background-color: transparent;
+    height: 35vh;
+    width: 90vw;
+    margin: -14vh 0 0 5vw;
+    z-index: 3;
+  }
+
+  .container > .row{
+    margin-top: 2vh;
+  }
+
+  /* ============ */
+
+ .dflixOriginals {
+    height: 40vh;
+    border:3px solid  rgb(196, 191, 187);
+  }
+
+  .header2{
+    color: rgb(39, 39, 39);
+    margin: 1vh 0 0 6vw;
+    padding-top: 2vh;
+    font-size: 1.2em;
+  }
+
+  .content-2{
+    background-color: transparent;
+    height: 50vh;
+    width: 90vw;
+    margin: 6vh 0 0 5vw;
+    z-index: 3;
+  }
+
+   /* ============ */
+
+  .trendingMovies {
+    height: 30vh;
+  }
+
+  .header3{
+    color: rgb(22, 22, 22);
+    margin: 1vh 0 0 6vw;
+    padding-top: 2vh;
+    font-size: 1.2em;
+  }
+
+  .content-3{
+    background-color: transparent;
+    height: 50vh;
+    width: 90vw;
+    margin: 4vh 0 0 5vw;
+    z-index: 3;
+  }
+
+   /* ============ */
+
+  .trendingShows {
+    height: 35vh;
+  }
+
+  .header4{
+    color: rgb(22, 22, 22);
+    margin: 1vh 0 0 6vw;
+    font-size: 1.2em;
+  }
+
+  .content-4{
+    background-color: transparent;
+    height: 50vh;
+    width: 90vw;
+    margin: 0 0 0 5vw;
+    z-index: 3;
+  }
+
+   /* ============ */
+
+   .war {
+    height: 30vh;
+  }
+
+  .header5{
+    color: rgb(22, 22, 22);
+    margin: 1vh 0 0 6vw;
+    font-size: 1.2em;
+  }
+
+  .content-5{
+    background-color: transparent;
+    height: 50vh;
+    width: 90vw;
+    margin: 0 0 0 5vw;
+  }
