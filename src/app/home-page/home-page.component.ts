@@ -89,29 +89,15 @@ export class HomePageComponent implements OnInit {
     nav: true
   }
 
-  constructor(private formBuilder:FormBuilder, private http: HttpClient, private scroll: ViewportScroller) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  profileForm = this.formBuilder.group({
-    firstName:[''],
-    lastName:[''],
-    address:[''],
-    dob:[''],
-    gender:['']
-  })
-
-  saveForm() {
-    console.log('Form Data', this.profileForm.value);
-    this.http.post('',this.profileForm.value).subscribe((res)=>{
-        console.log(res);
-    });
+    
   }
 
   clickedMe() {
+    alert("Hello ")
     console.log("Click Unaa");
-    
   }
 
 }
