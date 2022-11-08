@@ -140,22 +140,22 @@
       </ng-template>  
       <ng-template carouselSlide>
         <mat-card class="lastestMovies card2">
-          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKJ0_w59ynoaohEYkAXACE9PVtnRuagRotyk9ectqVNBUkajhL">
+          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQOtj4pUXP9fzyUz5gVYkZt3_1Z1gCNsGEPmT5snx_Xxhp0UNo">
         </mat-card>
       </ng-template>  
       <ng-template carouselSlide>
         <mat-card class="lastestMovies card3">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmfwHJen4VQ88Fby-TelNhHQJDvBXSqXYa1HMuyyFDx12Eujl">
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKJ0_w59ynoaohEYkAXACE9PVtnRuagRotyk9ectqVNBUkajhL">
         </mat-card>
       </ng-template>  
       <ng-template carouselSlide>
         <mat-card class="lastestMovies card4"> 
-          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN1GLAsnoPctHSTXo1qCenKQrvTAs9wb_vJi7M4Ob5rj3g5Ny7">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGN-04mG8Io_3Ca7N9TanIVXFrYzvSAo3fwALLMs6vryG6n9Rt">
         </mat-card>
       </ng-template>  
       <ng-template carouselSlide>
         <mat-card class="lastestMovies card5">
-          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQOtj4pUXP9fzyUz5gVYkZt3_1Z1gCNsGEPmT5snx_Xxhp0UNo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmfwHJen4VQ88Fby-TelNhHQJDvBXSqXYa1HMuyyFDx12Eujl">
         </mat-card>
       </ng-template>  
       <ng-template carouselSlide>
@@ -163,9 +163,9 @@
           <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg">
         </mat-card>
       </ng-template>  
-      <ng-template carouselSlide>
+      <ng-template carouselSlide> 
         <mat-card class="lastestMovies card7">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGN-04mG8Io_3Ca7N9TanIVXFrYzvSAo3fwALLMs6vryG6n9Rt">
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN1GLAsnoPctHSTXo1qCenKQrvTAs9wb_vJi7M4Ob5rj3g5Ny7">
         </mat-card>
       </ng-template>  
       <ng-template carouselSlide>
@@ -210,42 +210,74 @@
 
 <div class="content-3">
   <h3 class="header3">Trending Movies</h3>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <mat-card class="trendingMovies card1">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="trendingMovies card2">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="trendingMovies card3">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="trendingMovies card4">Simple card</mat-card>
-      </div>
-    </div>
-  </div>
+   <owl-carousel-o [options]="customOptions2">
+      <ng-template carouselSlide>
+        <mat-card class="trendingMovies card1">
+          <img src="https://d1mpai99n4o75w.cloudfront.net/staging/movie/383/poster/processed/2021_6_15__10_54_36_816_Landscape%20Images%20%281920pX1080p%29with%20Title_image_with_title_one_x_landscape_tv.jpg">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="trendingMovies card2">
+          <img src="https://d1mpai99n4o75w.cloudfront.net/staging/movie/123/poster/processed/2022_1_1__9_29_25_853_ini%20aven%20port_image_with_title_one_x_landscape_tv.jpg">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="trendingMovies card3">
+          <img src="https://d1mpai99n4o75w.cloudfront.net/staging/movie/333/poster/processed/2022_1_1__9_25_16_255_Landscape_Images_1920pX1080p_with_Title_image_with_title_one_x_landscape_tv.jpg">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="trendingMovies card4"> 
+          <img src="https://d1mpai99n4o75w.cloudfront.net/staging/movie/114/poster/processed/2022_1_1__9_28_13_690_Siri%20Parakum%20Landscape%20Images%20%28800pX1422p%29_image_with_title_one_x_landscape_tv.jpg">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="trendingMovies card4"> 
+          <img src="https://d1mpai99n4o75w.cloudfront.net/staging/movie/117/poster/processed/Saroja%20Landscape%20Images%20%28800pX1422p%29_image_with_title_one_x_landscape_tv.jpg">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="trendingMovies card4"> 
+          <img src="https://d1mpai99n4o75w.cloudfront.net/staging/movie/27/poster/processed/2022_1_1__9_19_7_961_adaraneeya%20kathawak_image_with_title_one_x_landscape_tv.jpg">
+        </mat-card>
+      </ng-template>  
+    </owl-carousel-o>
 </div>
 
 <div class="content-4">
   <h3 class="header4">Trending Shows</h3>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <mat-card class="trendingShows card1">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="trendingShows card2">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="trendingShows card3">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="trendingShows card4">Simple card</mat-card>
-      </div>
-    </div>
-  </div>
+  <owl-carousel-o [options]="customOptions3">
+    <ng-template carouselSlide>
+      <mat-card class="trendingShows card1">
+        <img src="https://d1mpai99n4o75w.cloudfront.net/staging/tv_show/9/poster/processed/2022_1_1__9_46_13_92_Sangeethe%20Portrait%20without%20Title%201350pX1800p_image_with_title_one_x_landscape_tv.jpg">
+      </mat-card>
+    </ng-template>  
+    <ng-template carouselSlide>
+      <mat-card class="trendingShows card2">
+        <img src="https://d1mpai99n4o75w.cloudfront.net/staging/tv_show/54/poster/processed/2022_1_1__9_46_31_875_dharani_image_with_title_one_x_landscape_tv.jpg">
+      </mat-card>
+    </ng-template>  
+    <ng-template carouselSlide>
+      <mat-card class="trendingShows card3">
+        <img src="https://d1mpai99n4o75w.cloudfront.net/staging/tv_show/55/poster/processed/2022_1_1__9_46_41_894_deweni%20inima_image_with_title_one_x_landscape_tv.jpg">
+      </mat-card>
+    </ng-template>  
+    <ng-template carouselSlide>
+      <mat-card class="trendingShows card4"> 
+        <img src="https://d1mpai99n4o75w.cloudfront.net/staging/tv_show/69/poster/processed/2022_1_1__9_46_22_637_Podu%20Main%20Icon_image_with_title_one_x_landscape_tv.jpg">
+      </mat-card>
+    </ng-template>  
+    <ng-template carouselSlide>
+      <mat-card class="trendingShows card4"> 
+        <img src="https://d1mpai99n4o75w.cloudfront.net/staging/tv_show/159/poster/processed/2022_1_1__9_47_2_610_Landscape%20without%20title%20Main%20%281920X648%29_image_with_title_one_x_landscape_tv.jpg">
+      </mat-card>
+    </ng-template>  
+    <ng-template carouselSlide>
+      <mat-card class="trendingShows card5"> 
+        <img src="https://d1mpai99n4o75w.cloudfront.net/staging/movie/27/poster/processed/2022_1_1__9_19_7_961_adaraneeya%20kathawak_image_with_title_one_x_landscape_tv.jpg">
+      </mat-card>
+    </ng-template>  
+  </owl-carousel-o>
 </div>
 
 <!-- <div class="content-5">

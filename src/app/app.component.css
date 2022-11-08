@@ -110,8 +110,8 @@ html, body {
   .content-2{
     background-color: transparent;
     height: 50vh;
-    width: 90vw;
-    margin: 6vh 0 0 1vw;
+    width: 95vw;
+    margin: 6vh 0 0 0;
     z-index: 3;
   }
 
@@ -124,7 +124,7 @@ html, body {
   }
 
   .cont2{
-    margin-left: 6vw;
+    margin-left: 5vw;
   }
 
  .dflixOriginals > img{
@@ -167,7 +167,7 @@ html, body {
    /* ============ */
 
   .trendingShows {
-    height: 35vh;
+    height: 30vh;
   }
 
   .header4{
@@ -181,7 +181,7 @@ html, body {
     background-color: transparent;
     height: 50vh;
     width: 90vw;
-    margin: 0 0 0 5vw;
+    margin: -8vh 0 5vh 5vw;
     z-index: 3;
   }
 
