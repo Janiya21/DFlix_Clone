@@ -12,9 +12,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class AppComponent {
   title = 'Dflix';
 
-  constructor(private formBuilder:FormBuilder, private http: HttpClient, private scroll: ViewportScroller){
-    
-  }
+  constructor(){}
   
 }
 

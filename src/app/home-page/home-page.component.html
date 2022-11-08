@@ -94,19 +94,39 @@
       <span class="visually-hidden">Next</span>
     </button>
 </div>
-
+  
 <div class="content-1">
   <h3 class="header1">Latest Movies</h3>
   <div class="latestMovies-scroll">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide>
-        <mat-card class="lastestMovies card1">
+        <mat-card id="latestMovies-card01" class="lastestMovies card1" (mouseenter)="setZoomEffect('latestMovies-card01','latestMovies-card01-zoom')" >
           <img src="https://m.media-amazon.com/images/M/MV5BM2IwNWY2YWEtNTU4Ni00MmE2LTljZjItNWQ0NzBlNjJiMzBiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg">
+        </mat-card>
+
+        <mat-card id="latestMovies-card01-zoom" style="display:none;" class="lastestMovies card1" (mouseleave)="setZoomOutEffect('latestMovies-card01','latestMovies-card01-zoom')">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BM2IwNWY2YWEtNTU4Ni00MmE2LTljZjItNWQ0NzBlNjJiMzBiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg" 
+            class="card-img-top" alt="...">
+            <div class="card-body" style="margin:-1vh 0 0 7vw">
+              <a href="#" class="btn btn-dark">  1.7 h &nbsp; <b>Play</b></a>
+            </div>
+          </div>
         </mat-card>
       </ng-template>  
       <ng-template carouselSlide>
-        <mat-card class="lastestMovies card2">
+        <mat-card id="latestMovies-card02" class="lastestMovies card1" (mouseenter)="setZoomEffect('latestMovies-card02','latestMovies-card02-zoom')" >
           <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQOtj4pUXP9fzyUz5gVYkZt3_1Z1gCNsGEPmT5snx_Xxhp0UNo">
+        </mat-card>
+
+        <mat-card id="latestMovies-card02-zoom" style="display:none;" class="lastestMovies card1" (mouseleave)="setZoomOutEffect('latestMovies-card02','latestMovies-card02-zoom')">
+          <div class="card">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQOtj4pUXP9fzyUz5gVYkZt3_1Z1gCNsGEPmT5snx_Xxhp0UNo"
+            class="card-img-top" alt="...">
+            <div class="card-body" style="margin:-1vh 0 0 7vw">
+              <a href="#" class="btn btn-dark">  1.4 h &nbsp; <b>Play</b></a>
+            </div>
+          </div>
         </mat-card>
       </ng-template>  
       <ng-template carouselSlide>
@@ -142,6 +162,10 @@
     </owl-carousel-o>
   </div>
 </div>
+
+<!-- <button (mouseenter)="clickedMe()" (mouseleave)="leaveMe()" mat-raised-button color="accent">
+  Watch Now
+</button> -->
 
 <div class="content-2">
   <h3 class="header2">DFlix Originals <b style="font-weight:normal; color: rgb(85, 85, 85);" >This week</b></h3>
@@ -303,7 +327,7 @@
   </div>
 </div>
 
-<div class="row footer">
+<div class="row footer" (onclick)="clickedMe()">
   <mat-tab-group animationDuration="0ms">
     <mat-tab label="About" class="aboutSite" style="max-height:50vw">
       <div class="row" style="width: 80vw;">

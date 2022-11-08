@@ -17,6 +17,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RouterModule } from '@angular/router';
 import { MoviesComponent } from './movies/movies.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     routingComponents,
     NavbarComponent,
     MoviesComponent,
-    HomePageComponent
+    HomePageComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

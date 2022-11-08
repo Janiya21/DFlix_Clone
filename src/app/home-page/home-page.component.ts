@@ -96,8 +96,30 @@ export class HomePageComponent implements OnInit {
   }
 
   clickedMe() {
-    alert("Hello ")
-    console.log("Click Unaa");
+    // alert("Hello ")
+    console.log("In Unaa");
+  }
+  leaveMe() {
+    // alert("Hello ")
+    console.log("Leave Unaa");
+  }
+
+  setZoomEffect(tag:string, tag2:string) {
+    let c = document.getElementById(tag);
+    let cn = document.getElementById(tag2);
+
+    c?.setAttribute("style", "display:none;");
+    cn?.setAttribute("style", "display:block;");
+    
+  }
+
+  setZoomOutEffect(tag:string, tag2:string) {
+    let c = document.getElementById(tag);
+    let cn = document.getElementById(tag2);
+
+    c?.setAttribute("style", "display:block;");
+    cn?.setAttribute("style", "display:none;");
+    
   }
 
 }

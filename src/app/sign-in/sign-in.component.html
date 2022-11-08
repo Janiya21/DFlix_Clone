@@ -1,0 +1,39 @@
+<div class="layout">
+    <div class="user-form-layout">
+      <div class="row">
+        <div class="col-4" style="margin:2vh 0 2vh 30%" >
+          <h1>Sign In</h1>
+        </div>
+        <div class="col" style="padding:0;">
+          <img src="http://cdn.onlinewebfonts.com/svg/img_201469.png" style="height:5vh; margin: 2.4vh 7vw 4vh 0;">
+        </div>
+      </div>
+      <form [formGroup]="profileForm" profile class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>First Name</mat-label>
+          <input formControlName="firstName" matInput placeholder="Ex. Janith">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Last Name</mat-label>
+          <input formControlName="lastName" matInput placeholder="Ex. Sandaru">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Address</mat-label>
+          <input formControlName="address" matInput placeholder="Ex. Colombo">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>DoB</mat-label>
+          <input formControlName="dob" matInput placeholder="Ex. 2000-01-21">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Gender</mat-label>
+          <input formControlName="gender" matInput placeholder="Ex. Male">
+        </mat-form-field>
+        <button (click)="saveForm()" class="btn-submit" mat-raised-button color="accent">Accent</button>
+      </form>
+    </div>
+  </div>

@@ -81,6 +81,13 @@ html, body {
    
   
     /* ================== */
+
+    .card-img-top{
+      height: 50vh;
+      max-width: 20vw;
+      margin: 1vh 1vh 0 1vh;
+      font-size: 0.7em;
+    }
   
     .content-1{
       background-color: transparent;
