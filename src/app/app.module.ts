@@ -16,13 +16,15 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RouterModule } from '@angular/router';
 import { MoviesComponent } from './movies/movies.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     NavbarComponent,
-    MoviesComponent
+    MoviesComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
