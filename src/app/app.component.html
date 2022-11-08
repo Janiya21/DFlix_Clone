@@ -34,54 +34,88 @@
 </div> -->
 
 <div id="carouselExampleControls" class="carousel slide"data-bs-ride="carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="height:95vh">
       <div class="carousel-item">
-        <svg
-          class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-          width="800"
-          height="400"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: First slide"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
+        <div class="img01-desc">
+          <h2>Jhon Wick</h2>
+          <p class="mt-4" style="font-weight:normal">
+            A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist <br>
+            in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him <br>
+            carry out the ambitious plan, he recruits eight people with certain abilities and who have <br>
+            nothing to lose.
+          </p>
+          <div class="row d-flex justify-content-center">
+            <div class="col-2">
+              <button (click)="clickedMe()" mat-raised-button style="background-color:rgb(177, 82, 200);color:aliceblue">
+                Watch Now
+              </button>
+            </div>
+            <div class="col">
+              <button mat-raised-button>
+                Save To Playlist
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--   https://screenworld.it/wp-content/uploads/2022/07/john-wick.jpg -->
+        <img src="http://images1.resources.foxtel.com.au/store1/mount1/FBO/2019/I@096759_L.jpg"
+          style="width: 100vw; height:95vh"
         >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777"></rect>
-          <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
-        </svg>
+        <title>Placeholder</title>
       </div>
       <div class="carousel-item">
-        <svg
-          class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-          width="800"
-          height="400"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: Second slide"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
+        <div class="img02-desc">
+          <h2>Breaking Bad</h2>
+          <p class="mt-4" style="font-weight:normal">
+            A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist <br>
+            in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him <br>
+            carry out the ambitious plan, he recruits eight people with certain abilities and who have <br>
+            nothing to lose.
+          </p>
+          <div class="row d-flex justify-content-center">
+            <div class="col-2">
+              <button (click)="clickedMe()" mat-raised-button color="warn">
+                Watch Now
+              </button>
+            </div>
+            <div class="col">
+              <button mat-raised-button>
+                Save To Playlist
+              </button>
+            </div>
+          </div>
+        </div>
+        <img src="https://wallpaperaccess.com/full/781822.jpg"
+          style="width: 100vw; height:95vh"
         >
           <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#666"></rect>
-          <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
-        </svg>
       </div>
       <div class="carousel-item active">
-        <svg
-          class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-          width="800"
-          height="400"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: Third slide"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
+        <div class="img03-desc">
+          <h2>Money Heist</h2>
+          <p class="mt-4" style="font-weight:normal">
+            A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist <br>
+            in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him <br>
+            carry out the ambitious plan, he recruits eight people with certain abilities and who have <br>
+            nothing to lose.
+          </p>
+          <div class="row d-flex justify-content-center">
+            <div class="col-2">
+              <button (click)="clickedMe()" mat-raised-button color="accent">
+                Watch Now
+              </button>
+            </div>
+            <div class="col">
+              <button mat-raised-button>
+                Save To Playlist
+              </button>
+            </div>
+          </div>
+        </div>
+        <img src="https://nilsenreport.ca/wp-content/uploads/2021/09/Money-Heist-season-6.jpg"
+          style="width: 100vw; height:95vh"
         >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#555"></rect>
-          <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
-        </svg>
+        <title>Placeholder</title>
       </div>
     </div>
     <button class="carousel-control-prev"type="button"data-bs-target="#carouselExampleControls"data-bs-slide="prev">
@@ -94,42 +128,82 @@
     </button>
 </div>
 
+
 <div class="content-1">
   <h3 class="header1">Latest Movies</h3>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <mat-card class="lastestMovies card1">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="lastestMovies card2">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="lastestMovies card3">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="lastestMovies card4">Simple card</mat-card>
-      </div>
-    </div>
+  <div class="latestMovies-scroll">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <mat-card class="lastestMovies card1">
+          <img src="https://m.media-amazon.com/images/M/MV5BM2IwNWY2YWEtNTU4Ni00MmE2LTljZjItNWQ0NzBlNjJiMzBiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="lastestMovies card2">
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKJ0_w59ynoaohEYkAXACE9PVtnRuagRotyk9ectqVNBUkajhL">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="lastestMovies card3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmfwHJen4VQ88Fby-TelNhHQJDvBXSqXYa1HMuyyFDx12Eujl">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="lastestMovies card4"> 
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN1GLAsnoPctHSTXo1qCenKQrvTAs9wb_vJi7M4Ob5rj3g5Ny7">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="lastestMovies card5">
+          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQOtj4pUXP9fzyUz5gVYkZt3_1Z1gCNsGEPmT5snx_Xxhp0UNo">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="lastestMovies card6">
+          <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="lastestMovies card7">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGN-04mG8Io_3Ca7N9TanIVXFrYzvSAo3fwALLMs6vryG6n9Rt">
+        </mat-card>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <mat-card class="lastestMovies card8">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS15WXzJnh5FKZcjV7jwxj57HtPiu-mJyMBPJL7E2rPEFbLRPjA">
+        </mat-card>
+      </ng-template>  
+    </owl-carousel-o>
   </div>
 </div>
 
 <div class="content-2">
-  <h3 class="header2">DFlix Originals</h3>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <mat-card class="dflixOriginals card1">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="dflixOriginals card2">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="dflixOriginals card3">Simple card</mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="dflixOriginals card4">Simple card</mat-card>
-      </div>
+  <h3 class="header2">DFlix Originals <b style="font-weight:normal; color: rgb(85, 85, 85);" >This week</b></h3>
+  <div class="row cont2">
+    <div class="col">
+      <mat-card class="dflixOriginals card1">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3UO4_vLSdzm76mMTuOf96jLyjdfme5Zx8gVTPNgBLiVyiLMc6">
+      </mat-card>
+    </div>
+    <div class="col">
+      <mat-card class="dflixOriginals card2">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyyo8a69t-6D5R5161sFeykiEpramzDSqNWLydttZEe5KRFF8F">
+      </mat-card>
+    </div>
+    <div class="col">
+      <mat-card class="dflixOriginals card3">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ15vF5EL_53h1IVz2sgf0q9i_O6AK7MkjX3mscLcxvTvO_2cb7">
+      </mat-card>
+    </div>
+    <div class="col">
+      <mat-card class="dflixOriginals card4">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZfkv9Cfpqc0MHSWj9pMEH_mOMboeAwx5ph4HjwTUw5rF4NfLw">
+      </mat-card>
+    </div>
+    <div class="col">
+      <mat-card class="dflixOriginals card5">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyFPZ0pCOPFdiXT-rbvi-Za2LxoqSWEt3zxnAtPgfcGcAjDY9X">
+      </mat-card>
     </div>
   </div>
 </div>
@@ -174,7 +248,7 @@
   </div>
 </div>
 
-<div class="content-5">
+<!-- <div class="content-5">
   <h3 class="header5">War</h3>
   <div class="container text-center">
     <div class="row">
@@ -191,6 +265,103 @@
         <mat-card class="war card4">Simple card</mat-card>
       </div>
     </div>
+  </div>
+</div> -->
+
+<div>
+  <div class="row platforms">
+    <div class="col">
+      <img height="55vh" src="https://www.computerhope.com/jargon/i/ios.png" class="rounded mx-auto d-block" alt="...">
+    </div>
+    <div class="col">
+      <h1 style="font-size: 3.6em">android</h1>
+    </div>
+    <div class="col">
+      <h1 style="font-size: 3.6em">anddroidTV</h1>
+    </div>
+    <div class="col">
+      <img height="60vh" src="https://1000logos.net/wp-content/uploads/2022/02/Apple-TV-logo.png" class="rounded mx-auto d-block" alt="...">
+    </div>
+  </div>
+  <div class="row">
+    <h1 style="font-size: 3.6em; margin:-10vh 0 5vh 45%">Roku</h1>
+  </div>
+</div>
+
+<div class="platform-details">
+  <div class="row">
+    <h1 style="font-size: 2.3em; margin:8vh 0 4vh 38%">All-in-one Platform</h1>
+  </div>
+  <div class="row">
+    <p style="margin:-4vh 0 0 20%">Watch youur favorite movies, tv-shows & videos whenever you are in your phone, tab, desktop or smart tv</p>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col">
+      <button type="button" class="btn watchNow">Watch Now</button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn promo btn-outline-dark">Watch Promo Video</button>
+    </div>
+  </div>
+</div>
+
+<div class="row footer">
+  <mat-tab-group animationDuration="0ms">
+    <mat-tab label="About" class="aboutSite" style="max-height:50vw">
+      <div class="row" style="width: 80vw;">
+        <div class="col">
+          <h4>What to watch</h4>
+          <ul>
+            <li>Home</li>
+            <li>Movies</li>
+            <li>Tv Shows</li>
+            <li>Channels</li>
+            <li>Live</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>Support</li>
+            <li>Billing</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Apps</h4>
+          <ul>
+            <li>Install Apps</li>
+            <li>Link TV</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Get Help</h4>
+          <ul>
+            <li>FAQ</li>
+            <li>Help Center</li>
+            <li>Report Problem</li>
+            <li>Email: support@dflix.com</li>
+          </ul>
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Advertise in Deflix">Content 2</mat-tab>
+    <mat-tab label="Promotions">Content 3</mat-tab>
+  </mat-tab-group>
+
+  <div class="row details-Rem" style="width:80vw">
+    <div class="col-5">
+      <h5 class="head5">Powered By </h5>
+    </div>
+    <div class="col-2" style="width:5vw">
+      <img id="deranaImg" alt="derana" height="70" src="../assets/img/derana.png" >
+    </div>
+    <div class="col-2">
+      <h5 class="head5">Powered By </h5>
+    </div>
+    <div class="col">
+      <img id="rumexImg" alt="rumex" height="60" src="../assets/img/logo.png">
+    </div> 
   </div>
 </div>
 
